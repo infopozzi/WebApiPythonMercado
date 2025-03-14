@@ -4,10 +4,10 @@ class Mercado(db.Model):
     __tablename__ = 'mercado'
     id = db.Column(db.Integer, primary_key=True)
     nome = db.Column(db.String(100))
-    cnpj = db.Column(db.String(15))
+    cnpj = db.Column(db.String(20))
     email = db.Column(db.String(100))
     celular = db.Column(db.String(20))
-    senha = db.Column(db.String(300))
+    senha = db.Column(db.String(20))
     status = db.Column(db.Boolean)
 
     def __init__(self, nome, cnpj, email, celular, senha, status):
